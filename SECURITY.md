@@ -4,7 +4,9 @@
 
 Report privately through a GitHub security advisory: https://github.com/pendiego/OpenSir/security/advisories/new
 
-Please do not open a public issue for these.
+If that page is not available, open an issue titled "Private security contact" with no details. The maintainer will reply there with a private channel.
+
+Do not put vulnerability details in a public issue.
 
 ## Scope
 
