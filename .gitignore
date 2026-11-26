@@ -1,0 +1,15 @@
+re/
+.omp/
+node_modules/
+target/
+build/
+.svelte-kit/
+dist/
+.env
+.env.*
+*.log
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.idea/

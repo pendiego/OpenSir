@@ -1,0 +1,13 @@
+[package]
+name = "opensir-cli"
+version = "0.1.0"
+description = "Read-only command-line tool for GameSir controllers (OpenSir)"
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[dependencies]
+opensir-core = { path = "../opensir-core" }
+hidapi = "2"
+serde_json = "1"

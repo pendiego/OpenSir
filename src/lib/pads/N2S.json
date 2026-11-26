@@ -1,0 +1,28 @@
+{
+  "height": 672.96,
+  "spots": {
+    "L2": { "x": 244, "y": -32, "shape": { "kind": "rect", "w": 120, "h": 30, "rx": 15 }, "chip": true },
+    "R2": { "x": 756, "y": -32, "shape": { "kind": "rect", "w": 120, "h": 30, "rx": 15 }, "chip": true },
+    "L1": { "x": 244, "y": 23, "shape": { "kind": "rect", "w": 125, "h": 40, "rx": 16, "rot": -10 } },
+    "R1": { "x": 756, "y": 23, "shape": { "kind": "rect", "w": 125, "h": 40, "rx": 16, "rot": 10 } },
+    "L3": { "x": 236, "y": 213, "shape": { "kind": "circle", "r": 86 } },
+    "R3": { "x": 628, "y": 347, "shape": { "kind": "circle", "r": 86 } },
+    "Up": { "x": 371, "y": 294, "shape": { "kind": "rect", "w": 52, "h": 58, "rx": 8 } },
+    "Under": { "x": 371, "y": 401, "shape": { "kind": "rect", "w": 52, "h": 58, "rx": 8 } },
+    "Left": { "x": 317, "y": 347, "shape": { "kind": "rect", "w": 58, "h": 52, "rx": 8 } },
+    "Right": { "x": 425, "y": 347, "shape": { "kind": "rect", "w": 58, "h": 52, "rx": 8 } },
+    "TRI": { "x": 760, "y": 152, "shape": { "kind": "circle", "r": 37 } },
+    "SQU": { "x": 696, "y": 217, "shape": { "kind": "circle", "r": 37 } },
+    "CIR": { "x": 825, "y": 217, "shape": { "kind": "circle", "r": 37 } },
+    "CRO": { "x": 760, "y": 281, "shape": { "kind": "circle", "r": 37 } },
+    "PS": { "x": 160, "y": 728, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    "Sel": { "x": 280, "y": 728, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    "Sta": { "x": 720, "y": 728, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    "Camera": { "x": 840, "y": 728, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    "FL1": { "x": 400, "y": 728, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    "FR1": { "x": 600, "y": 728, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true }
+  },
+  "extra": [],
+  "touchKeys": [],
+  "leds": []
+}

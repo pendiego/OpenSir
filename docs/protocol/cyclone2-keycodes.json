@@ -1,0 +1,872 @@
+{
+  "schema": "cyclone2-keycodes/1",
+  "source": "observed from the vendor app's behaviour (button names, index constants, key table)",
+  "status": "observed-static",
+  "count": 144,
+  "entries": [
+    {
+      "button": "FL1",
+      "button_string": "FL1",
+      "profile_index": 17,
+      "profile_index_const": "PROFILE_INDEX_FL1"
+    },
+    {
+      "button": "FR1",
+      "button_string": "FR1",
+      "profile_index": 18,
+      "profile_index_const": "PROFILE_INDEX_FR1"
+    },
+    {
+      "button": "L2",
+      "button_string": "L2",
+      "profile_index": 19,
+      "profile_index_const": "PROFILE_INDEX_L2"
+    },
+    {
+      "button": "L1",
+      "button_string": "L1",
+      "profile_index": 5,
+      "profile_index_const": "PROFILE_INDEX_L1"
+    },
+    {
+      "button": "L3",
+      "button_string": "L3",
+      "profile_index": 7,
+      "profile_index_const": "PROFILE_INDEX_L3"
+    },
+    {
+      "button": "Up",
+      "button_string": "Up",
+      "profile_index": 1,
+      "profile_index_const": "PROFILE_INDEX_UP"
+    },
+    {
+      "button": "Left",
+      "button_string": "Left",
+      "profile_index": 3,
+      "profile_index_const": "PROFILE_INDEX_LEFT"
+    },
+    {
+      "button": "Under",
+      "button_string": "Under",
+      "profile_index": 2,
+      "profile_index_const": "PROFILE_INDEX_DOWN"
+    },
+    {
+      "button": "Right",
+      "button_string": "Right",
+      "profile_index": 4,
+      "profile_index_const": "PROFILE_INDEX_RIGHT"
+    },
+    {
+      "button": "R2",
+      "button_string": "R2",
+      "profile_index": 20,
+      "profile_index_const": "PROFILE_INDEX_R2"
+    },
+    {
+      "button": "R1",
+      "button_string": "R1",
+      "profile_index": 6,
+      "profile_index_const": "PROFILE_INDEX_R1"
+    },
+    {
+      "button": "CIR",
+      "button_string": "CIR",
+      "profile_index": 10,
+      "profile_index_const": "PROFILE_INDEX_CIR"
+    },
+    {
+      "button": "CRO",
+      "button_string": "CRO",
+      "profile_index": 9,
+      "profile_index_const": "PROFILE_INDEX_CRO"
+    },
+    {
+      "button": "SQU",
+      "button_string": "SQU",
+      "profile_index": 11,
+      "profile_index_const": "PROFILE_INDEX_SQU"
+    },
+    {
+      "button": "TRI",
+      "button_string": "TRI",
+      "profile_index": 12,
+      "profile_index_const": "PROFILE_INDEX_TRI"
+    },
+    {
+      "button": "R3",
+      "button_string": "R3",
+      "profile_index": 8,
+      "profile_index_const": "PROFILE_INDEX_R3"
+    },
+    {
+      "button": "PS",
+      "button_string": "PS",
+      "profile_index": 13,
+      "profile_index_const": "PROFILE_INDEX_PS"
+    },
+    {
+      "button": "Sel",
+      "button_string": "Sel",
+      "profile_index": 14,
+      "profile_index_const": "PROFILE_INDEX_SEL"
+    },
+    {
+      "button": "Sta",
+      "button_string": "Sta",
+      "profile_index": 15,
+      "profile_index_const": "PROFILE_INDEX_STA"
+    },
+    {
+      "button": "Camera",
+      "button_string": "Camera",
+      "profile_index": 16,
+      "profile_index_const": "PROFILE_INDEX_CAMERA"
+    },
+    {
+      "button": "LSUp",
+      "button_string": "LSUp",
+      "profile_index": 21,
+      "profile_index_const": "PROFILE_INDEX_LSTICK_UP"
+    },
+    {
+      "button": "LSLeft",
+      "button_string": "LSLeft",
+      "profile_index": 23,
+      "profile_index_const": "PROFILE_INDEX_LSTICK_LEFT"
+    },
+    {
+      "button": "LSRight",
+      "button_string": "LSRight",
+      "profile_index": 24,
+      "profile_index_const": "PROFILE_INDEX_LSTICK_RIGHT"
+    },
+    {
+      "button": "LSUnder",
+      "button_string": "LSUnder",
+      "profile_index": 22,
+      "profile_index_const": "PROFILE_INDEX_LSTICK_DOWN"
+    },
+    {
+      "button": "RSUp",
+      "button_string": "RSUp",
+      "profile_index": 25,
+      "profile_index_const": "PROFILE_INDEX_RSTICK_UP"
+    },
+    {
+      "button": "RSLeft",
+      "button_string": "RSLeft",
+      "profile_index": 27,
+      "profile_index_const": "PROFILE_INDEX_RSTICK_LEFT"
+    },
+    {
+      "button": "RSRight",
+      "button_string": "RSRight",
+      "profile_index": 28,
+      "profile_index_const": "PROFILE_INDEX_RSTICK_RIGHT"
+    },
+    {
+      "button": "RSUnder",
+      "button_string": "RSUnder",
+      "profile_index": 26,
+      "profile_index_const": "PROFILE_INDEX_RSTICK_DOWN"
+    },
+    {
+      "button": "NC",
+      "button_string": "NC",
+      "profile_index": 255,
+      "profile_index_const": "PROFILE_INDEX_NC"
+    },
+    {
+      "button": "KB_ESC",
+      "button_string": "KB_ESC",
+      "profile_index": 50,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_ESC"
+    },
+    {
+      "button": "KB_F1",
+      "button_string": "KB_F1",
+      "profile_index": 51,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F1"
+    },
+    {
+      "button": "KB_F2",
+      "button_string": "KB_F2",
+      "profile_index": 52,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F2"
+    },
+    {
+      "button": "KB_F3",
+      "button_string": "KB_F3",
+      "profile_index": 53,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F3"
+    },
+    {
+      "button": "KB_F4",
+      "button_string": "KB_F4",
+      "profile_index": 54,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F4"
+    },
+    {
+      "button": "KB_F5",
+      "button_string": "KB_F5",
+      "profile_index": 55,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F5"
+    },
+    {
+      "button": "KB_F6",
+      "button_string": "KB_F6",
+      "profile_index": 56,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F6"
+    },
+    {
+      "button": "KB_F7",
+      "button_string": "KB_F7",
+      "profile_index": 57,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F7"
+    },
+    {
+      "button": "KB_F8",
+      "button_string": "KB_F8",
+      "profile_index": 58,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F8"
+    },
+    {
+      "button": "KB_F9",
+      "button_string": "KB_F9",
+      "profile_index": 59,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F9"
+    },
+    {
+      "button": "KB_F10",
+      "button_string": "KB_F10",
+      "profile_index": 60,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F10"
+    },
+    {
+      "button": "KB_F11",
+      "button_string": "KB_F11",
+      "profile_index": 61,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F11"
+    },
+    {
+      "button": "KB_F12",
+      "button_string": "KB_F12",
+      "profile_index": 62,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F12"
+    },
+    {
+      "button": "KB_BACKQUOTE",
+      "button_string": "KB_BACKQUOTE",
+      "profile_index": 63,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_BACKQUOTE"
+    },
+    {
+      "button": "KB_1",
+      "button_string": "KB_1",
+      "profile_index": 64,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_1"
+    },
+    {
+      "button": "KB_2",
+      "button_string": "KB_2",
+      "profile_index": 65,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_2"
+    },
+    {
+      "button": "KB_3",
+      "button_string": "KB_3",
+      "profile_index": 66,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_3"
+    },
+    {
+      "button": "KB_4",
+      "button_string": "KB_4",
+      "profile_index": 67,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_4"
+    },
+    {
+      "button": "KB_5",
+      "button_string": "KB_5",
+      "profile_index": 68,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_5"
+    },
+    {
+      "button": "KB_6",
+      "button_string": "KB_6",
+      "profile_index": 69,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_6"
+    },
+    {
+      "button": "KB_7",
+      "button_string": "KB_7",
+      "profile_index": 70,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_7"
+    },
+    {
+      "button": "KB_8",
+      "button_string": "KB_8",
+      "profile_index": 71,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_8"
+    },
+    {
+      "button": "KB_9",
+      "button_string": "KB_9",
+      "profile_index": 72,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_9"
+    },
+    {
+      "button": "KB_0",
+      "button_string": "KB_0",
+      "profile_index": 73,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_0"
+    },
+    {
+      "button": "KB_DEC",
+      "button_string": "KB_DEC",
+      "profile_index": 74,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_DEC"
+    },
+    {
+      "button": "KB_ADD",
+      "button_string": "KB_ADD",
+      "profile_index": 75,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_ADD"
+    },
+    {
+      "button": "KB_BACKSPACE",
+      "button_string": "KB_BACKSPACE",
+      "profile_index": 76,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_BACKSPACE"
+    },
+    {
+      "button": "KB_TAB",
+      "button_string": "KB_TAB",
+      "profile_index": 77,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_TAB"
+    },
+    {
+      "button": "KB_Q",
+      "button_string": "KB_Q",
+      "profile_index": 78,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_Q"
+    },
+    {
+      "button": "KB_W",
+      "button_string": "KB_W",
+      "profile_index": 79,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_W"
+    },
+    {
+      "button": "KB_E",
+      "button_string": "KB_E",
+      "profile_index": 80,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_E"
+    },
+    {
+      "button": "KB_R",
+      "button_string": "KB_R",
+      "profile_index": 81,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_R"
+    },
+    {
+      "button": "KB_T",
+      "button_string": "KB_T",
+      "profile_index": 82,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_T"
+    },
+    {
+      "button": "KB_Y",
+      "button_string": "KB_Y",
+      "profile_index": 83,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_Y"
+    },
+    {
+      "button": "KB_U",
+      "button_string": "KB_U",
+      "profile_index": 84,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_U"
+    },
+    {
+      "button": "KB_I",
+      "button_string": "KB_I",
+      "profile_index": 85,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_I"
+    },
+    {
+      "button": "KB_O",
+      "button_string": "KB_O",
+      "profile_index": 86,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_O"
+    },
+    {
+      "button": "KB_P",
+      "button_string": "KB_P",
+      "profile_index": 87,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_P"
+    },
+    {
+      "button": "KB_LBRACKETS",
+      "button_string": "KB_LBRACKETS",
+      "profile_index": 88,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_LBRACKETS"
+    },
+    {
+      "button": "KB_RBRACKETS",
+      "button_string": "KB_RBRACKETS",
+      "profile_index": 89,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_RBRACKETS"
+    },
+    {
+      "button": "KB_BACKSLASH",
+      "button_string": "KB_BACKSLASH",
+      "profile_index": 90,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_BACKSLASH"
+    },
+    {
+      "button": "KB_CAPSLOCK",
+      "button_string": "KB_CAPSLOCK",
+      "profile_index": 91,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_CAPSLOCK"
+    },
+    {
+      "button": "KB_A",
+      "button_string": "KB_A",
+      "profile_index": 92,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_A"
+    },
+    {
+      "button": "KB_S",
+      "button_string": "KB_S",
+      "profile_index": 93,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_S"
+    },
+    {
+      "button": "KB_D",
+      "button_string": "KB_D",
+      "profile_index": 94,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_D"
+    },
+    {
+      "button": "KB_F",
+      "button_string": "KB_F",
+      "profile_index": 95,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_F"
+    },
+    {
+      "button": "KB_G",
+      "button_string": "KB_G",
+      "profile_index": 96,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_G"
+    },
+    {
+      "button": "KB_H",
+      "button_string": "KB_H",
+      "profile_index": 97,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_H"
+    },
+    {
+      "button": "KB_J",
+      "button_string": "KB_J",
+      "profile_index": 98,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_J"
+    },
+    {
+      "button": "KB_K",
+      "button_string": "KB_K",
+      "profile_index": 99,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_K"
+    },
+    {
+      "button": "KB_L",
+      "button_string": "KB_L",
+      "profile_index": 100,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_L"
+    },
+    {
+      "button": "KB_SEMI",
+      "button_string": "KB_SEMI",
+      "profile_index": 101,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_SEMI"
+    },
+    {
+      "button": "KB_QUOTE",
+      "button_string": "KB_QUOTE",
+      "profile_index": 102,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_QUOTE"
+    },
+    {
+      "button": "KB_ENTER",
+      "button_string": "KB_ENTER",
+      "profile_index": 103,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_ENTER"
+    },
+    {
+      "button": "KB_LSHIFT",
+      "button_string": "KB_LSHIFT",
+      "profile_index": 104,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_LSHIFT"
+    },
+    {
+      "button": "KB_Z",
+      "button_string": "KB_Z",
+      "profile_index": 105,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_Z"
+    },
+    {
+      "button": "KB_X",
+      "button_string": "KB_X",
+      "profile_index": 106,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_X"
+    },
+    {
+      "button": "KB_C",
+      "button_string": "KB_C",
+      "profile_index": 107,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_C"
+    },
+    {
+      "button": "KB_V",
+      "button_string": "KB_V",
+      "profile_index": 108,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_V"
+    },
+    {
+      "button": "KB_B",
+      "button_string": "KB_B",
+      "profile_index": 109,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_B"
+    },
+    {
+      "button": "KB_N",
+      "button_string": "KB_N",
+      "profile_index": 110,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_N"
+    },
+    {
+      "button": "KB_M",
+      "button_string": "KB_M",
+      "profile_index": 111,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_M"
+    },
+    {
+      "button": "KB_COMMA",
+      "button_string": "KB_COMMA",
+      "profile_index": 112,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_COMMA"
+    },
+    {
+      "button": "KB_DOT",
+      "button_string": "KB_DOT",
+      "profile_index": 113,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_DOT"
+    },
+    {
+      "button": "KB_SLASH",
+      "button_string": "KB_SLASH",
+      "profile_index": 114,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_SLASH"
+    },
+    {
+      "button": "KB_RSHIFT",
+      "button_string": "KB_RSHIFT",
+      "profile_index": 115,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_RSHIFT"
+    },
+    {
+      "button": "KB_LCTRL",
+      "button_string": "KB_LCTRL",
+      "profile_index": 116,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_LCTRL"
+    },
+    {
+      "button": "KB_WIN",
+      "button_string": "KB_WIN",
+      "profile_index": 117,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_WIN"
+    },
+    {
+      "button": "KB_LALT",
+      "button_string": "KB_LALT",
+      "profile_index": 118,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_LALT"
+    },
+    {
+      "button": "KB_SPACE",
+      "button_string": "KB_SPACE",
+      "profile_index": 119,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_SPACE"
+    },
+    {
+      "button": "KB_RALT",
+      "button_string": "KB_RALT",
+      "profile_index": 120,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_RALT"
+    },
+    {
+      "button": "KB_RCTRL",
+      "button_string": "KB_RCTRL",
+      "profile_index": 121,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_RCTRL"
+    },
+    {
+      "button": "KB_INSERT",
+      "button_string": "KB_NUM_INSERT",
+      "profile_index": 122,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_INSERT"
+    },
+    {
+      "button": "KB_HOME",
+      "button_string": "KB_NUM_HOME",
+      "profile_index": 123,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_HOME"
+    },
+    {
+      "button": "KB_PGUP",
+      "button_string": "KB_NUM_PGUP",
+      "profile_index": 124,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_PGUP"
+    },
+    {
+      "button": "KB_DELETE",
+      "button_string": "KB_NUM_DELETE",
+      "profile_index": 125,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_DELETE"
+    },
+    {
+      "button": "KB_END",
+      "button_string": "KB_NUM_END",
+      "profile_index": 126,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_END"
+    },
+    {
+      "button": "KB_PGDN",
+      "button_string": "KB_NUM_PGDN",
+      "profile_index": 127,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_PGDN"
+    },
+    {
+      "button": "KB_UP",
+      "button_string": "KB_NUM_UP",
+      "profile_index": 128,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_UP"
+    },
+    {
+      "button": "KB_DOWN",
+      "button_string": "KB_NUM_DOWN",
+      "profile_index": 129,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_DOWN"
+    },
+    {
+      "button": "KB_LEFT",
+      "button_string": "KB_NUM_LEFT",
+      "profile_index": 130,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_LEFT"
+    },
+    {
+      "button": "KB_RIGHT",
+      "button_string": "KB_NUM_RIGHT",
+      "profile_index": 131,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_RIGHT"
+    },
+    {
+      "button": "KB_NUM_LOCK",
+      "button_string": "KB_NUM_LOCK",
+      "profile_index": 132,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_LOCK"
+    },
+    {
+      "button": "KB_NUM_DIV",
+      "button_string": "KB_NUM_DIV",
+      "profile_index": 133,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_DIV"
+    },
+    {
+      "button": "KB_NUM_MUL",
+      "button_string": "KB_NUM_MUL",
+      "profile_index": 134,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_MUL"
+    },
+    {
+      "button": "KB_NUM_DEC",
+      "button_string": "KB_NUM_DEC",
+      "profile_index": 135,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_DEC"
+    },
+    {
+      "button": "KB_NUM_ADD",
+      "button_string": "KB_NUM_ADD",
+      "profile_index": 136,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_ADD"
+    },
+    {
+      "button": "KB_NUM_DOT",
+      "button_string": "KB_NUM_DOT",
+      "profile_index": 137,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_DOT"
+    },
+    {
+      "button": "KB_NUM_ENTER",
+      "button_string": "KB_NUM_ENTER",
+      "profile_index": 138,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_ENTER"
+    },
+    {
+      "button": "KB_NUM_0",
+      "button_string": "KB_NUM_0",
+      "profile_index": 139,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_0"
+    },
+    {
+      "button": "KB_NUM_1",
+      "button_string": "KB_NUM_1",
+      "profile_index": 140,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_1"
+    },
+    {
+      "button": "KB_NUM_2",
+      "button_string": "KB_NUM_2",
+      "profile_index": 141,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_2"
+    },
+    {
+      "button": "KB_NUM_3",
+      "button_string": "KB_NUM_3",
+      "profile_index": 142,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_3"
+    },
+    {
+      "button": "KB_NUM_4",
+      "button_string": "KB_NUM_4",
+      "profile_index": 143,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_4"
+    },
+    {
+      "button": "KB_NUM_5",
+      "button_string": "KB_NUM_5",
+      "profile_index": 144,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_5"
+    },
+    {
+      "button": "KB_NUM_6",
+      "button_string": "KB_NUM_6",
+      "profile_index": 145,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_6"
+    },
+    {
+      "button": "KB_NUM_7",
+      "button_string": "KB_NUM_7",
+      "profile_index": 146,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_7"
+    },
+    {
+      "button": "KB_NUM_8",
+      "button_string": "KB_NUM_8",
+      "profile_index": 147,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_8"
+    },
+    {
+      "button": "KB_NUM_9",
+      "button_string": "KB_NUM_9",
+      "profile_index": 148,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NUM_9"
+    },
+    {
+      "button": "KB_PLAY",
+      "button_string": "KB_NUM_PLAY",
+      "profile_index": 149,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_PLAY"
+    },
+    {
+      "button": "KB_STOP",
+      "button_string": "KB_NUM_STOP",
+      "profile_index": 150,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_STOP"
+    },
+    {
+      "button": "KB_NEXT",
+      "button_string": "KB_NUM_NEXT",
+      "profile_index": 151,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_NEXT"
+    },
+    {
+      "button": "KB_PREV",
+      "button_string": "KB_NUM_PREV",
+      "profile_index": 152,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_PREV"
+    },
+    {
+      "button": "MS_LEFT_CLICK",
+      "button_string": "MS_LEFT_CLICK",
+      "profile_index": 200,
+      "profile_index_const": "PROFILE_MOUSE_INDEX_LEFT_CLICK"
+    },
+    {
+      "button": "MS_MID_CLICK",
+      "button_string": "MS_MID_CLICK",
+      "profile_index": 201,
+      "profile_index_const": "PROFILE_MOUSE_INDEX_MID_CLICK"
+    },
+    {
+      "button": "MS_RIGHT_CLICK",
+      "button_string": "MS_RIGHT_CLICK",
+      "profile_index": 202,
+      "profile_index_const": "PROFILE_MOUSE_INDEX_RIGHT_CLICK"
+    },
+    {
+      "button": "MS_BUTTON4",
+      "button_string": "MS_BUTTON4",
+      "profile_index": 204,
+      "profile_index_const": "PROFILE_MOUSE_INDEX_BUTTON4"
+    },
+    {
+      "button": "MS_BUTTON5",
+      "button_string": "MS_BUTTON5",
+      "profile_index": 203,
+      "profile_index_const": "PROFILE_MOUSE_INDEX_BUTTON5"
+    },
+    {
+      "button": "MS_WHEEL_UP",
+      "button_string": "MS_WHEEL_UP",
+      "profile_index": 205,
+      "profile_index_const": "PROFILE_MOUSE_INDEX_WHEEL_UP"
+    },
+    {
+      "button": "MS_WHEEL_DOWN",
+      "button_string": "MS_WHEEL_DOWN",
+      "profile_index": 206,
+      "profile_index_const": "PROFILE_MOUSE_INDEX_WHEEL_DOWN"
+    },
+    {
+      "button": "Mute",
+      "button_string": "Mute",
+      "profile_index": 230,
+      "profile_index_const": "PROFILE_FUN_INDEX_MUTE"
+    },
+    {
+      "button": "Shift",
+      "button_string": "Shift",
+      "profile_index": 231,
+      "profile_index_const": "PROFILE_FUN_INDEX_SHIFT"
+    },
+    {
+      "button": "KB_VOLUP",
+      "button_string": "KB_NUM_VOL_UP",
+      "profile_index": 153,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_VOL_UP"
+    },
+    {
+      "button": "KB_VOLDOWN",
+      "button_string": "KB_NUM_VOL_DOWN",
+      "profile_index": 154,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_VOL_DOWN"
+    },
+    {
+      "button": "KB_MUTE",
+      "button_string": "KB_NUM_MUTE",
+      "profile_index": 155,
+      "profile_index_const": "PROFILE_KEYBOARD_INDEX_VOL_MUTE"
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+/*
+ * OpenSir design tokens. Direction: a calibration bench for one controller.
+ * Graphite surfaces stay neutral; the controller drawing and its LED light carry the color.
+ * One accent (LED amber) marks the profile on the device, the primary action, focus and selection.
+ * Signature: tick-marked scales with mono readouts on every range control (see Range/DualRange).
+ * Spacing on a 4px grid; radii: controls 8, cards 12, panels 16.
+ */
+:root {
+  color-scheme: dark;
+  --bg: #131314;
+  --sidebar: #0e0e0f;
+  --surface: #19191b;
+  --raised: #232325;
+  --hover: #2b2b2e;
+  --line: rgb(237 237 237 / 0.08);
+  --line-strong: rgb(237 237 237 / 0.16);
+  --fg: #ededed;
+  --fg-2: #a1a1a6;
+  --fg-3: #939398;
+  --accent: #f2a93b;
+  --accent-ink: #1c1304;
+  --accent-text: #f5b95c;
+  --accent-soft: rgb(242 169 59 / 0.14);
+  --primary-bg: #ededed;
+  --primary-fg: #131314;
+  --track: #2e2e31;
+  --fill: #c9c9cd;
+  --ok: #4cc38a;
+  --warn: #e5a23b;
+  --danger: #ea696e;
+  --highlight: inset 0 1px 0 rgb(255 255 255 / 0.06);
+  --shadow: 0 16px 48px rgb(0 0 0 / 0.5);
+  --r-ctl: 8px;
+  --r-card: 12px;
+  --r-panel: 16px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --font: "IBM Plex Sans", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.45;
+  font-synthesis: none;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f4f5;
+  --sidebar: #ebebed;
+  --surface: #ffffff;
+  --raised: #f1f1f2;
+  --hover: #e6e6e8;
+  --line: rgb(23 23 23 / 0.09);
+  --line-strong: rgb(23 23 23 / 0.18);
+  --fg: #171717;
+  --fg-2: #525252;
+  --fg-3: #65656a;
+  --accent: #c77d0a;
+  --accent-ink: #ffffff;
+  --accent-text: #915900;
+  --accent-soft: rgb(199 125 10 / 0.12);
+  --primary-bg: #171717;
+  --primary-fg: #ffffff;
+  --track: #dedee1;
+  --fill: #3f3f43;
+  --ok: #107636;
+  --warn: #945900;
+  --danger: #c72222;
+  --highlight: none;
+  --shadow: 0 8px 24px rgb(0 0 0 / 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  overflow: hidden;
+  /* Desktop app: clicks and Ctrl+A must not paint labels blue like a web page. */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+input, textarea { user-select: text; -webkit-user-select: text; }
+::placeholder { color: var(--fg-3); }
+
+/* Buttons: secondary by default (raised + hairline); `.primary` is the one main action. */
+button {
+  min-height: 32px;
+  padding: 0 12px;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: var(--r-ctl);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 140ms var(--ease), border-color 140ms var(--ease), color 140ms var(--ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  button:hover:not(:disabled, .active) { background: var(--hover); }
+}
+button:active:not(:disabled) { transform: scale(0.98); }
+button:disabled { opacity: 0.45; cursor: default; }
+button.primary { background: var(--primary-bg); border-color: transparent; color: var(--primary-fg); }
+@media (hover: hover) and (pointer: fine) {
+  button.primary:hover:not(:disabled) { background: var(--primary-bg); opacity: 0.9; }
+}
+button.danger { color: var(--danger); }
+/* Selected option in a group: accent tint + accent hairline (hover above skips it). */
+button.active,
+.seg button.active {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  color: var(--accent-text);
+  box-shadow: var(--highlight);
+}
+
+input[type="text"], input[type="number"], input:not([type]), select, textarea {
+  min-height: 32px;
+  padding: 4px 10px;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: var(--r-ctl);
+}
+input[type="number"] { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+select option { background: var(--surface); color: var(--fg); }
+
+input[type="color"] {
+  width: 40px;
+  height: 28px;
+  padding: 2px;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: var(--r-ctl);
+  cursor: pointer;
+}
+
+input[type="checkbox"] { accent-color: var(--fg); width: 16px; height: 16px; }
+
+/* Range: neutral fill up to --p (set by the component), small round thumb. */
+input[type="range"] {
+  --p: 50%;
+  appearance: none;
+  height: 20px;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--fill) var(--p), var(--track) var(--p));
+}
+input[type="range"]::-moz-range-track { height: 4px; border-radius: 2px; background: var(--track); }
+input[type="range"]::-moz-range-progress { height: 4px; border-radius: 2px; background: var(--fill); }
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: var(--fg);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--line-strong);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--fg);
+  border: 2px solid var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+a { color: var(--fg); }
+
+dialog {
+  margin: auto;
+  width: min(420px, calc(100vw - 48px));
+  padding: 20px;
+  background: var(--surface);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  border-radius: var(--r-panel);
+  box-shadow: var(--shadow);
+  /* Enter: fade + settle from 96%; exit reverses. display/overlay keep it on screen while it leaves. */
+  opacity: 0;
+  transform: scale(0.96);
+  transition:
+    opacity 200ms var(--ease),
+    transform 200ms var(--ease),
+    overlay 200ms var(--ease) allow-discrete,
+    display 200ms var(--ease) allow-discrete;
+}
+dialog[open] { opacity: 1; transform: none; }
+@starting-style {
+  dialog[open] { opacity: 0; transform: scale(0.96); }
+}
+dialog::backdrop {
+  background: rgb(0 0 0 / 0);
+  transition:
+    background-color 200ms var(--ease),
+    overlay 200ms var(--ease) allow-discrete,
+    display 200ms var(--ease) allow-discrete;
+}
+dialog[open]::backdrop { background: rgb(0 0 0 / 0.5); }
+@starting-style {
+  dialog[open]::backdrop { background: rgb(0 0 0 / 0); }
+}
+
+/* View transitions (src/lib/motion.ts): screens crossfade; the controller art (`pad-art`) morphs
+   between the list card and the Overview drawing, like a container transform. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 200ms;
+  animation-timing-function: var(--ease);
+}
+::view-transition-group(pad-art) {
+  animation-duration: 380ms;
+  animation-timing-function: var(--ease);
+}
+::view-transition-old(pad-art),
+::view-transition-new(pad-art) {
+  animation-duration: 380ms;
+  animation-timing-function: var(--ease);
+}
+/* Launch intro: the big mark flies into the title bar mark. */
+::view-transition-group(brand-mark) {
+  animation-duration: 560ms;
+  animation-timing-function: var(--ease);
+}
+
+/* Surfaces */
+.card, .panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 20px;
+}
+
+/* Section label inside a card: small, secondary, sentence case. */
+.label-bar, .section-label {
+  display: block;
+  margin: 16px 0 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--fg-2);
+}
+
+/* Segmented control: one raised track, the chosen option a step lighter. */
+.seg {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 2px;
+  padding: 2px;
+  background: var(--sidebar);
+  border: 1px solid var(--line);
+  border-radius: var(--r-ctl);
+}
+.seg button {
+  min-height: 28px;
+  padding: 0 12px;
+  background: transparent;
+  border-color: transparent;
+  border-radius: 6px;
+  box-shadow: none;
+  color: var(--fg-2);
+}
+
+/* Label left, control right. */
+.field-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 40px;
+}
+
+.value {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-2);
+}
+
+.row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.end { justify-content: flex-end; }
+.grow { flex: 1; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.stack { display: grid; gap: 12px; max-width: 640px; }
+.muted { color: var(--fg-2); }
+/* Plain-language explanation under a control; always visible (not hover-only). */
+.hint { margin: 0; font-size: 12px; color: var(--fg-2); }
+/* Controls that only matter while a master setting is on; master stays outside the fieldset. */
+.dep { border: 0; padding: 0; margin: 0; min-width: 0; display: flex; flex-direction: column; gap: inherit; }
+.dep:disabled { opacity: 0.45; pointer-events: none; }
+.title { font-size: 15px; font-weight: 500; margin: 0 0 12px; }
+.error { color: var(--danger); }
+
+.badge {
+  display: inline-block;
+  padding: 0 6px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--fg-2);
+  font: 11px/18px var(--mono);
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--danger);
+  border-radius: var(--r-ctl);
+}
+.notice button { margin-left: auto; }
+
+.field { display: grid; gap: 4px; margin: 8px 0; }
+.range { display: grid; grid-template-columns: minmax(0, 160px) minmax(0, 1fr) 56px; align-items: center; gap: 12px; margin: 4px 0; }
+.range span { overflow-wrap: anywhere; color: var(--fg-2); }
+.range output { min-width: 56px; text-align: right; font: 12px var(--mono); font-variant-numeric: tabular-nums; color: var(--fg-2); white-space: nowrap; }
+.check { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+
+/* Visually hidden but read by screen readers: labels for icon-only or visual-only content. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}

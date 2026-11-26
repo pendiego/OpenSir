@@ -1,0 +1,445 @@
+{
+ "args_note": "struct_hex = argument struct bytes in the field order the vendor app passes to the library",
+ "path": "T3XS selectors A/B (usage 0xFF7A); A and B produce identical frames",
+ "source": "vendor-emulated: the vendor SAPJoy library (T4N2 build) run under emulation; HID open/read/write replaced by recorders, replies zeroed",
+ "vectors": [
+  {
+   "args": [
+    0
+   ],
+   "export": "SetGamepadStateReport",
+   "frames": [
+    "00a506c01c0087"
+   ]
+  },
+  {
+   "args": [
+    1
+   ],
+   "export": "SetGamepadStateReport",
+   "frames": [
+    "00a506c01c0188"
+   ]
+  },
+  {
+   "args": [
+    2
+   ],
+   "export": "SetGamepadStateReport",
+   "frames": [
+    "00a506c01c0289"
+   ]
+  },
+  {
+   "args": [
+    0
+   ],
+   "export": "SetABXYRotationTest",
+   "frames": [
+    "00a506c0080073"
+   ]
+  },
+  {
+   "args": [
+    1
+   ],
+   "export": "SetABXYRotationTest",
+   "frames": [
+    "00a506c0080174"
+   ]
+  },
+  {
+   "args": [
+    1000
+   ],
+   "export": "SetReportRate",
+   "frames": [
+    "00a507c02fe80386"
+   ]
+  },
+  {
+   "args": [
+    8000
+   ],
+   "export": "SetReportRate",
+   "frames": [
+    "00a507c02f401ffa"
+   ]
+  },
+  {
+   "args": [
+    36,
+    0
+   ],
+   "export": "RecordMacro",
+   "frames": [
+    "00a507c0102400a0"
+   ]
+  },
+  {
+   "args": [
+    36,
+    1
+   ],
+   "export": "RecordMacro",
+   "frames": [
+    "00a507c0102401a1"
+   ]
+  },
+  {
+   "args": [],
+   "export": "SaveConfigPage",
+   "frames": [
+    "00a505c0238d"
+   ]
+  },
+  {
+   "case": "taint",
+   "export": "SetKeyMappingHSV",
+   "frames": [
+    "00a516c00911181f262d343b424950575e656c737a815d"
+   ],
+   "struct_hex": "11181f262d343b424950575e656c737a81888f969d"
+  },
+  {
+   "case": "real",
+   "export": "SetKeyMappingHSV",
+   "frames": [
+    "00a516c009000100007864640001020a020104000000d9"
+   ],
+   "struct_hex": "000100007864640001020a02010400000000000000"
+  },
+  {
+   "case": "taint",
+   "export": "SetStickCurveHSV",
+   "frames": [
+    "00a51bc01311181f262d343b424950575e656c737a81888f969da45a"
+   ],
+   "struct_hex": "11181f262d343b424950575e656c737a81888f969da4"
+  },
+  {
+   "case": "real",
+   "export": "SetStickCurveHSV",
+   "frames": [
+    "00a51bc013010000000000000001320a0f1e28323c46505a5f021e03"
+   ],
+   "struct_hex": "010000000000000001320a0f1e28323c46505a5f021e"
+  },
+  {
+   "case": "taint",
+   "export": "SetStickMapping",
+   "frames": [
+    "00a511c01511181f262d343b424950575e25"
+   ],
+   "struct_hex": "11181f262d343b424950575e"
+  },
+  {
+   "case": "real",
+   "export": "SetStickMapping",
+   "frames": [
+    "00a511c015002d0a5a000101013c28000184"
+   ],
+   "struct_hex": "002d0a5a000101013c280001"
+  },
+  {
+   "case": "taint",
+   "export": "SetTriggerParam",
+   "frames": [
+    "00a515c01711181f262d343b424950575e656c737ae9"
+   ],
+   "struct_hex": "11181f262d343b424950575e656c737a"
+  },
+  {
+   "case": "real",
+   "export": "SetTriggerParam",
+   "frames": [
+    "00a515c017010114500a141e28323c46505a64013250"
+   ],
+   "struct_hex": "010114500a141e28323c46505a640132"
+  },
+  {
+   "case": "taint",
+   "export": "SetVibrateLevel",
+   "frames": [
+    "00a50bc01a11181f262d3459"
+   ],
+   "struct_hex": "11181f262d34"
+  },
+  {
+   "case": "real",
+   "export": "SetVibrateLevel",
+   "frames": [
+    "00a50bc01a03020100040599"
+   ],
+   "struct_hex": "030201000405"
+  },
+  {
+   "case": "taint",
+   "export": "SetLightParam",
+   "frames": [
+    "00a508c00c11181fc1"
+   ],
+   "struct_hex": "11181f"
+  },
+  {
+   "case": "real",
+   "export": "SetLightParam",
+   "frames": [
+    "00a508c00c500502d0"
+   ],
+   "struct_hex": "500502"
+  },
+  {
+   "case": "taint",
+   "export": "SetLightColorHSV",
+   "frames": [
+    "00a516c00e11181f262d343b424950575e656c737a8162"
+   ],
+   "struct_hex": "11181f262d343b424950575e656c737a81"
+  },
+  {
+   "case": "real",
+   "export": "SetLightColorHSV",
+   "frames": [
+    "00a516c00e042c01645a7800504600003c325a00281e94"
+   ],
+   "struct_hex": "042c01645a7800504600003c325a00281e"
+  },
+  {
+   "case": "taint",
+   "export": "SetDPadParam",
+   "frames": [
+    "00a509c00611181f26e2"
+   ],
+   "struct_hex": "11181f26"
+  },
+  {
+   "case": "real",
+   "export": "SetDPadParam",
+   "frames": [
+    "00a509c0060102000178"
+   ],
+   "struct_hex": "01020001"
+  },
+  {
+   "case": "taint",
+   "export": "SetVibrateTest",
+   "frames": [
+    "00a509c01911181f26f5"
+   ],
+   "struct_hex": "11181f26"
+  },
+  {
+   "case": "real",
+   "export": "SetVibrateTest",
+   "frames": [
+    "00a509c019323c46508b"
+   ],
+   "struct_hex": "323c4650"
+  },
+  {
+   "case": "taint",
+   "export": "SetMotionSenseCurveHSV",
+   "frames": [
+    "00a519c01d11181f262d343b424950575e656c737a81888f9621"
+   ],
+   "struct_hex": "11181f262d343b424950575e656c737a81888f96"
+  },
+  {
+   "case": "real",
+   "export": "SetMotionSenseCurveHSV",
+   "frames": [
+    "00a519c01d0000000000000028050a141e28323c46505a01149f"
+   ],
+   "struct_hex": "0000000000000028050a141e28323c46505a0114"
+  },
+  {
+   "case": "taint",
+   "export": "SetMotionSenseMapping",
+   "frames": [
+    "00a510c01f11181f262d343b42495057d0"
+   ],
+   "struct_hex": "11181f262d343b42495057"
+  },
+  {
+   "case": "real",
+   "export": "SetMotionSenseMapping",
+   "frames": [
+    "00a510c01f1e50040002ff003c32000176"
+   ],
+   "struct_hex": "1e50040002ff003c320001"
+  },
+  {
+   "case": "taint",
+   "export": "SetMacroStep",
+   "frames": [
+    "00a515c01111181f262d343b424950575e656c737ae3"
+   ],
+   "struct_hex": "11181f262d343b424950575e656c737a"
+  },
+  {
+   "case": "real",
+   "export": "SetMacroStep",
+   "frames": [
+    "00a515c01124000101003202010400000000000014fe"
+   ],
+   "struct_hex": "24000101003202010400000000000014"
+  },
+  {
+   "case": "taint",
+   "export": "SetGamepadParam",
+   "frames": [
+    "00a50ec02d11181f000000000000e8"
+   ],
+   "struct_hex": "11181f"
+  },
+  {
+   "case": "real",
+   "export": "SetGamepadParam",
+   "frames": [
+    "00a50ec02d0a0001000000000000ab"
+   ],
+   "struct_hex": "0a0001"
+  },
+  {
+   "args": [
+    0
+   ],
+   "export": "GetVersion",
+   "frames": [
+    "00a505c0036d"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetDeviceInfo",
+   "frames": [
+    "00a505c0016b"
+   ]
+  },
+  {
+   "args": [
+    0
+   ],
+   "export": "GetMacAddress",
+   "frames": [
+    "00a505c0026c"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetDeviceType",
+   "frames": [
+    "00a505c02690"
+   ]
+  },
+  {
+   "args": [
+    0,
+    1
+   ],
+   "export": "GetKeyMappingHSV",
+   "frames": [
+    "00a506c00a0176"
+   ]
+  },
+  {
+   "args": [
+    1,
+    0
+   ],
+   "export": "GetStickCurveHSV",
+   "frames": [
+    "00a506c0140180"
+   ]
+  },
+  {
+   "args": [
+    0
+   ],
+   "export": "GetStickMapping",
+   "frames": [
+    "00a506c0160081"
+   ]
+  },
+  {
+   "args": [
+    1
+   ],
+   "export": "GetTriggerParam",
+   "frames": [
+    "00a506c0180184"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetVibrateLevel",
+   "frames": [
+    "00a505c01b85"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetLightParam",
+   "frames": [
+    "00a505c00f79"
+   ]
+  },
+  {
+   "args": [
+    4
+   ],
+   "export": "GetLightColorHSV",
+   "frames": [
+    "00a516c00f04000000701408300000000000000000004a"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetDPadParam",
+   "frames": [
+    "00a505c00771"
+   ]
+  },
+  {
+   "args": [
+    0
+   ],
+   "export": "GetMotionSenseCurveHSV",
+   "frames": [
+    "00a505c01e88"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetMotionSenseMapping",
+   "frames": [
+    "00a505c0208a"
+   ]
+  },
+  {
+   "args": [
+    36,
+    0
+   ],
+   "export": "GetMacroStep",
+   "frames": [
+    "00a507c0122400a2"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetGamepadParam",
+   "frames": [
+    "00a505c02e98"
+   ]
+  },
+  {
+   "args": [],
+   "export": "GetReportRate",
+   "frames": [
+    "00a505c0309a"
+   ]
+  }
+ ]
+}

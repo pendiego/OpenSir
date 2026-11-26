@@ -1,0 +1,565 @@
+{
+ "model": "T3CE",
+ "block": "light",
+ "length": 102,
+ "source": "observed from the vendor app's behaviour",
+ "baseline": "every byte 0x20 (macro counts at 32), flip = xor 0x5a",
+ "fields": [
+  {
+   "path": "Light.Animation1.light.mode",
+   "offset": 0,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.singleColorBrightness",
+   "offset": 1,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.breathingBrightness",
+   "offset": 2,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.phantomBrightness",
+   "offset": 3,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.rainbowBrightness",
+   "offset": 4,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.radarBrightness",
+   "offset": 5,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.breathingSpeed",
+   "offset": 6,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.phantomSpeed",
+   "offset": 7,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.rainbowSpeed",
+   "offset": 8,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.radarSpeed",
+   "offset": 9,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.phantomHueOffset",
+   "offset": 10,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.light.rainbowHueOffset",
+   "offset": 11,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.color.panel.h",
+   "offset": 12,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation1.color.panel.s",
+   "offset": 14,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.color.panel.v",
+   "offset": 15,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.color.home.h",
+   "offset": 16,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation1.color.home.s",
+   "offset": 18,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation1.color.home.v",
+   "offset": 19,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.mode",
+   "offset": 20,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.singleColorBrightness",
+   "offset": 21,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.breathingBrightness",
+   "offset": 22,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.phantomBrightness",
+   "offset": 23,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.rainbowBrightness",
+   "offset": 24,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.radarBrightness",
+   "offset": 25,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.breathingSpeed",
+   "offset": 26,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.phantomSpeed",
+   "offset": 27,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.rainbowSpeed",
+   "offset": 28,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.radarSpeed",
+   "offset": 29,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.phantomHueOffset",
+   "offset": 30,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.light.rainbowHueOffset",
+   "offset": 31,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.color.panel.h",
+   "offset": 32,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation2.color.panel.s",
+   "offset": 34,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.color.panel.v",
+   "offset": 35,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.color.home.h",
+   "offset": 36,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation2.color.home.s",
+   "offset": 38,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation2.color.home.v",
+   "offset": 39,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.mode",
+   "offset": 40,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.singleColorBrightness",
+   "offset": 41,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.breathingBrightness",
+   "offset": 42,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.phantomBrightness",
+   "offset": 43,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.rainbowBrightness",
+   "offset": 44,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.radarBrightness",
+   "offset": 45,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.breathingSpeed",
+   "offset": 46,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.phantomSpeed",
+   "offset": 47,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.rainbowSpeed",
+   "offset": 48,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.radarSpeed",
+   "offset": 49,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.phantomHueOffset",
+   "offset": 50,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.light.rainbowHueOffset",
+   "offset": 51,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.color.panel.h",
+   "offset": 52,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation3.color.panel.s",
+   "offset": 54,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.color.panel.v",
+   "offset": 55,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.color.home.h",
+   "offset": 56,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation3.color.home.s",
+   "offset": 58,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation3.color.home.v",
+   "offset": 59,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.mode",
+   "offset": 60,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.singleColorBrightness",
+   "offset": 61,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.breathingBrightness",
+   "offset": 62,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.phantomBrightness",
+   "offset": 63,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.rainbowBrightness",
+   "offset": 64,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.radarBrightness",
+   "offset": 65,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.breathingSpeed",
+   "offset": 66,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.phantomSpeed",
+   "offset": 67,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.rainbowSpeed",
+   "offset": 68,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.radarSpeed",
+   "offset": 69,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.phantomHueOffset",
+   "offset": 70,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.light.rainbowHueOffset",
+   "offset": 71,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.color.panel.h",
+   "offset": 72,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation4.color.panel.s",
+   "offset": 74,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.color.panel.v",
+   "offset": 75,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.color.home.h",
+   "offset": 76,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation4.color.home.s",
+   "offset": 78,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation4.color.home.v",
+   "offset": 79,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.mode",
+   "offset": 80,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.singleColorBrightness",
+   "offset": 81,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.breathingBrightness",
+   "offset": 82,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.phantomBrightness",
+   "offset": 83,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.rainbowBrightness",
+   "offset": 84,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.radarBrightness",
+   "offset": 85,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.breathingSpeed",
+   "offset": 86,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.phantomSpeed",
+   "offset": 87,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.rainbowSpeed",
+   "offset": 88,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.radarSpeed",
+   "offset": 89,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.phantomHueOffset",
+   "offset": 90,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.light.rainbowHueOffset",
+   "offset": 91,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.color.panel.h",
+   "offset": 92,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation5.color.panel.s",
+   "offset": 94,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.color.panel.v",
+   "offset": 95,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.color.home.h",
+   "offset": 96,
+   "size": 2,
+   "kind": "u16be"
+  },
+  {
+   "path": "Light.Animation5.color.home.s",
+   "offset": 98,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.Animation5.color.home.v",
+   "offset": 99,
+   "size": 1,
+   "kind": "u8"
+  },
+  {
+   "path": "Light.StandbyTime",
+   "offset": 101,
+   "size": 1,
+   "kind": "u8"
+  }
+ ],
+ "structural": [],
+ "unread": [
+  [
+   100,
+   100
+  ]
+ ],
+ "encoderNormalisesOnBaseline": [
+  100
+ ]
+}

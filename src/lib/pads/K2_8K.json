@@ -1,0 +1,33 @@
+{
+  "height": 660.04,
+  "spots": {
+    "L2": { "x": 280, "y": -32, "shape": { "kind": "rect", "w": 120, "h": 30, "rx": 15 }, "chip": true },
+    "L1": { "x": 280, "y": 18, "shape": { "kind": "rect", "w": 210, "h": 30, "rx": 14 } },
+    "L3": { "x": 250, "y": 195, "shape": { "kind": "circle", "r": 82 } },
+    "Up": { "x": 371, "y": 311, "shape": { "kind": "rect", "w": 50, "h": 50, "rx": 8, "rot": 45 } },
+    "Under": { "x": 371, "y": 399, "shape": { "kind": "rect", "w": 50, "h": 50, "rx": 8, "rot": 45 } },
+    "Left": { "x": 327, "y": 355, "shape": { "kind": "rect", "w": 50, "h": 50, "rx": 8, "rot": 45 } },
+    "Right": { "x": 415, "y": 355, "shape": { "kind": "rect", "w": 50, "h": 50, "rx": 8, "rot": 45 } },
+    "TRI": { "x": 751, "y": 129, "shape": { "kind": "circle", "r": 35 } },
+    "SQU": { "x": 685, "y": 195, "shape": { "kind": "circle", "r": 35 } },
+    "CIR": { "x": 816, "y": 195, "shape": { "kind": "circle", "r": 35 } },
+    "CRO": { "x": 751, "y": 261, "shape": { "kind": "circle", "r": 35 } },
+    "R1": { "x": 720, "y": 18, "shape": { "kind": "rect", "w": 210, "h": 30, "rx": 14 } },
+    "R2": { "x": 720, "y": -32, "shape": { "kind": "rect", "w": 120, "h": 30, "rx": 15 }, "chip": true },
+    "R3": { "x": 628, "y": 345, "shape": { "kind": "circle", "r": 82 } },
+    "PS": { "x": 499, "y": 103, "shape": { "kind": "circle", "r": 41 } },
+    "Sel": { "x": 408, "y": 170, "shape": { "kind": "rect", "w": 46, "h": 26, "rx": 13, "rot": 40 } },
+    "Sta": { "x": 591, "y": 170, "shape": { "kind": "rect", "w": 46, "h": 26, "rx": 13, "rot": -40 } },
+    "Camera": { "x": 500, "y": 179, "shape": { "kind": "rect", "w": 56, "h": 29, "rx": 10 } },
+    "FL1": { "x": 353, "y": 84, "shape": { "kind": "rect", "w": 30, "h": 48, "rx": 8, "rot": -35 } },
+    "FR1": { "x": 649, "y": 84, "shape": { "kind": "rect", "w": 30, "h": 48, "rx": 8, "rot": 35 } }
+  },
+  "extra": [
+    { "x": 280, "y": 715, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    { "x": 720, "y": 715, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    { "x": 160, "y": 715, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    { "x": 840, "y": 715, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true }
+  ],
+  "touchKeys": [],
+  "leds": []
+}

@@ -1,0 +1,531 @@
+{
+  "_meta": {
+    "source": "observed from the vendor app's behaviour",
+    "generated_by": "private reverse-engineering harness (not published)",
+    "note": "Bytes are outputs of running the vendor app's command builders, input parser and report handler. Inputs are synthetic.",
+    "stick_offset_note": "The vendor app decodes stick bytes as signed 16-bit LE and subtracts 128 from the value, see t3lite.md"
+  },
+  "commands": [
+    {
+      "name": "enterProfileConfig",
+      "ds_sends": false,
+      "args": [],
+      "bytes_hex": "0f01"
+    },
+    {
+      "name": "exitProfileConfig_save",
+      "ds_sends": false,
+      "args": [
+        true
+      ],
+      "bytes_hex": "0f0201"
+    },
+    {
+      "name": "exitProfileConfig_discard",
+      "ds_sends": false,
+      "args": [
+        false
+      ],
+      "bytes_hex": "0f0200"
+    },
+    {
+      "name": "switchProfile_shift",
+      "ds_sends": false,
+      "args": [
+        5
+      ],
+      "bytes_hex": "0f0705"
+    },
+    {
+      "name": "readFWVersion",
+      "ds_sends": false,
+      "args": [],
+      "bytes_hex": "0f09"
+    },
+    {
+      "name": "readCurrentProfile",
+      "ds_sends": false,
+      "args": [],
+      "bytes_hex": "0f0b"
+    },
+    {
+      "name": "readRGB",
+      "ds_sends": "via generic reqGetRgbState",
+      "args": [],
+      "bytes_hex": "0f0d"
+    },
+    {
+      "name": "vibrate_full_left_half_right",
+      "ds_sends": true,
+      "args": [
+        255,
+        128
+      ],
+      "bytes_hex": "0f206655ff80"
+    },
+    {
+      "name": "vibrate_zero",
+      "ds_sends": true,
+      "args": [
+        0,
+        0
+      ],
+      "bytes_hex": "0f2066550000"
+    },
+    {
+      "name": "setLightStatus_on_frame7",
+      "ds_sends": "via generic reqSetLightStatus",
+      "args": [
+        true,
+        7
+      ],
+      "bytes_hex": "0f0d0107"
+    },
+    {
+      "name": "setLightStatus_off",
+      "ds_sends": "via generic reqSetLightStatus",
+      "args": [
+        false,
+        0
+      ],
+      "bytes_hex": "0f0d0000"
+    },
+    {
+      "name": "setMacroStatus_FL1_on",
+      "ds_sends": "via generic reqSetMacroRecordStatus",
+      "args": [
+        "FL1",
+        1
+      ],
+      "bytes_hex": "0f160101"
+    },
+    {
+      "name": "setMacroStatus_FR1_off",
+      "ds_sends": "via generic reqSetMacroRecordStatus",
+      "args": [
+        "FR1",
+        0
+      ],
+      "bytes_hex": "0f160200"
+    },
+    {
+      "name": "quickUpdate",
+      "ds_sends": true,
+      "args": [],
+      "bytes_hex": "0f175588"
+    },
+    {
+      "name": "setCalibrationState_on",
+      "ds_sends": false,
+      "args": [
+        1
+      ],
+      "bytes_hex": "0ffd01"
+    },
+    {
+      "name": "heartBeat_default",
+      "ds_sends": false,
+      "args": [],
+      "bytes_hex": "0ff200"
+    },
+    {
+      "name": "enterUpgradeMode_DO_NOT_SEND",
+      "ds_sends": "dfu path only; never call",
+      "args": [],
+      "bytes_hex": "0ffc"
+    }
+  ],
+  "input_reports": {
+    "idle_zero": "101400000000000000000000000000000000000000",
+    "sticks_centred_0x80": "101400000000800080008000800000000000000000",
+    "sticks_full_left_down": "101400000000ff7f00800000000000000000000000",
+    "buttons_overlap_byte2": "101451400000000000000000000000000000000000",
+    "triggers_full": "10140000ffff000000000000000000000000000000",
+    "turbo_colour_flags": "101400000000000000000000000010ff0080010001",
+    "byte14_bits_no_turbo": "10140000000000000000000000000f010203000100"
+  },
+  "decoded_states": {
+    "idle_zero": {
+      "report_hex": "101400000000000000000000000000000000000000",
+      "decoded_state": {
+        "ls": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "rs": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "Directional": "0",
+        "DPad_Up": false,
+        "DPad_Up_Right": false,
+        "DPad_Right": false,
+        "DPad_Right_Down": false,
+        "DPad_Down": false,
+        "DPad_Down_Left": false,
+        "DPad_Left": false,
+        "DPad_Left_Up": false,
+        "LS_Up": false,
+        "LS_Down": false,
+        "LS_Left": false,
+        "LS_Right": false,
+        "RS_Up": false,
+        "RS_Down": false,
+        "RS_Left": false,
+        "RS_Right": false,
+        "SQU": false,
+        "CRO": false,
+        "CIR": false,
+        "TRI": false,
+        "L1": false,
+        "R1": false,
+        "L2": false,
+        "R2": false,
+        "Share": false,
+        "Options": false,
+        "L3": false,
+        "R3": false,
+        "Home": false,
+        "Camera": false,
+        "FL1": false,
+        "FR1": false,
+        "LeftTrigger": 0,
+        "RightTrigger": 0,
+        "M": false,
+        "RealB": false
+      }
+    },
+    "sticks_centred_0x80": {
+      "report_hex": "101400000000800080008000800000000000000000",
+      "decoded_state": {
+        "ls": {
+          "x": 0,
+          "y": 0
+        },
+        "rs": {
+          "x": 0,
+          "y": 0
+        },
+        "Directional": "0",
+        "DPad_Up": false,
+        "DPad_Up_Right": false,
+        "DPad_Right": false,
+        "DPad_Right_Down": false,
+        "DPad_Down": false,
+        "DPad_Down_Left": false,
+        "DPad_Left": false,
+        "DPad_Left_Up": false,
+        "LS_Up": false,
+        "LS_Down": false,
+        "LS_Left": false,
+        "LS_Right": false,
+        "RS_Up": false,
+        "RS_Down": false,
+        "RS_Left": false,
+        "RS_Right": false,
+        "SQU": false,
+        "CRO": false,
+        "CIR": false,
+        "TRI": false,
+        "L1": false,
+        "R1": false,
+        "L2": false,
+        "R2": false,
+        "Share": false,
+        "Options": false,
+        "L3": false,
+        "R3": false,
+        "Home": false,
+        "Camera": false,
+        "FL1": false,
+        "FR1": false,
+        "LeftTrigger": 0,
+        "RightTrigger": 0,
+        "M": false,
+        "RealB": false
+      }
+    },
+    "sticks_full_left_down": {
+      "report_hex": "101400000000ff7f00800000000000000000000000",
+      "decoded_state": {
+        "ls": {
+          "x": 0.9961,
+          "y": 1.0039
+        },
+        "rs": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "Directional": "0",
+        "DPad_Up": false,
+        "DPad_Up_Right": false,
+        "DPad_Right": false,
+        "DPad_Right_Down": false,
+        "DPad_Down": false,
+        "DPad_Down_Left": false,
+        "DPad_Left": false,
+        "DPad_Left_Up": false,
+        "LS_Up": false,
+        "LS_Down": true,
+        "LS_Left": false,
+        "LS_Right": true,
+        "RS_Up": false,
+        "RS_Down": false,
+        "RS_Left": false,
+        "RS_Right": false,
+        "SQU": false,
+        "CRO": false,
+        "CIR": false,
+        "TRI": false,
+        "L1": false,
+        "R1": false,
+        "L2": false,
+        "R2": false,
+        "Share": false,
+        "Options": false,
+        "L3": false,
+        "R3": false,
+        "Home": false,
+        "Camera": false,
+        "FL1": false,
+        "FR1": false,
+        "LeftTrigger": 0,
+        "RightTrigger": 0,
+        "M": false,
+        "RealB": false
+      }
+    },
+    "buttons_overlap_byte2": {
+      "report_hex": "101451400000000000000000000000000000000000",
+      "decoded_state": {
+        "ls": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "rs": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "Directional": "1",
+        "DPad_Up": true,
+        "DPad_Up_Right": false,
+        "DPad_Right": false,
+        "DPad_Right_Down": false,
+        "DPad_Down": false,
+        "DPad_Down_Left": false,
+        "DPad_Left": false,
+        "DPad_Left_Up": false,
+        "LS_Up": false,
+        "LS_Down": false,
+        "LS_Left": false,
+        "LS_Right": false,
+        "RS_Up": false,
+        "RS_Down": false,
+        "RS_Left": false,
+        "RS_Right": false,
+        "SQU": true,
+        "CRO": false,
+        "CIR": false,
+        "TRI": false,
+        "L1": false,
+        "R1": false,
+        "L2": false,
+        "R2": false,
+        "Share": true,
+        "Options": false,
+        "L3": true,
+        "R3": false,
+        "Home": false,
+        "Camera": false,
+        "FL1": false,
+        "FR1": false,
+        "LeftTrigger": 0,
+        "RightTrigger": 0,
+        "M": false,
+        "RealB": false
+      }
+    },
+    "triggers_full": {
+      "report_hex": "10140000ffff000000000000000000000000000000",
+      "decoded_state": {
+        "ls": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "rs": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "Directional": "0",
+        "DPad_Up": false,
+        "DPad_Up_Right": false,
+        "DPad_Right": false,
+        "DPad_Right_Down": false,
+        "DPad_Down": false,
+        "DPad_Down_Left": false,
+        "DPad_Left": false,
+        "DPad_Left_Up": false,
+        "LS_Up": false,
+        "LS_Down": false,
+        "LS_Left": false,
+        "LS_Right": false,
+        "RS_Up": false,
+        "RS_Down": false,
+        "RS_Left": false,
+        "RS_Right": false,
+        "SQU": false,
+        "CRO": false,
+        "CIR": false,
+        "TRI": false,
+        "L1": false,
+        "R1": false,
+        "L2": true,
+        "R2": true,
+        "Share": false,
+        "Options": false,
+        "L3": false,
+        "R3": false,
+        "Home": false,
+        "Camera": false,
+        "FL1": false,
+        "FR1": false,
+        "LeftTrigger": 255,
+        "RightTrigger": 255,
+        "M": false,
+        "RealB": false
+      }
+    },
+    "turbo_colour_flags": {
+      "report_hex": "101400000000000000000000000010ff0080010001",
+      "decoded_state": {
+        "ls": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "rs": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "Directional": "0",
+        "DPad_Up": false,
+        "DPad_Up_Right": false,
+        "DPad_Right": false,
+        "DPad_Right_Down": false,
+        "DPad_Down": false,
+        "DPad_Down_Left": false,
+        "DPad_Left": false,
+        "DPad_Left_Up": false,
+        "LS_Up": false,
+        "LS_Down": false,
+        "LS_Left": false,
+        "LS_Right": false,
+        "RS_Up": false,
+        "RS_Down": false,
+        "RS_Left": false,
+        "RS_Right": false,
+        "SQU": false,
+        "CRO": false,
+        "CIR": false,
+        "TRI": false,
+        "L1": false,
+        "R1": false,
+        "L2": false,
+        "R2": false,
+        "Share": false,
+        "Options": false,
+        "L3": false,
+        "R3": false,
+        "Home": false,
+        "Camera": false,
+        "FL1": false,
+        "FR1": false,
+        "LeftTrigger": 0,
+        "RightTrigger": 0,
+        "M": false,
+        "RealB": true
+      }
+    },
+    "byte14_bits_no_turbo": {
+      "report_hex": "10140000000000000000000000000f010203000100",
+      "decoded_state": {
+        "ls": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "rs": {
+          "x": -0.0039,
+          "y": 0.0039
+        },
+        "Directional": "0",
+        "DPad_Up": false,
+        "DPad_Up_Right": false,
+        "DPad_Right": false,
+        "DPad_Right_Down": false,
+        "DPad_Down": false,
+        "DPad_Down_Left": false,
+        "DPad_Left": false,
+        "DPad_Left_Up": false,
+        "LS_Up": false,
+        "LS_Down": false,
+        "LS_Left": false,
+        "LS_Right": false,
+        "RS_Up": false,
+        "RS_Down": false,
+        "RS_Left": false,
+        "RS_Right": false,
+        "SQU": false,
+        "CRO": false,
+        "CIR": false,
+        "TRI": false,
+        "L1": false,
+        "R1": false,
+        "L2": false,
+        "R2": false,
+        "Share": false,
+        "Options": false,
+        "L3": false,
+        "R3": false,
+        "Home": false,
+        "Camera": true,
+        "FL1": true,
+        "FR1": true,
+        "LeftTrigger": 0,
+        "RightTrigger": 0,
+        "M": true,
+        "RealB": false
+      }
+    }
+  },
+  "ds_parse": {
+    "first_turbo_colour_flags": {
+      "dispatches": [
+        {
+          "dispatch": "updateDeviceProperties",
+          "payload": {
+            "deviceId": "PATH",
+            "state": {
+              "l3Raw": true,
+              "r3Raw": false,
+              "turboOn": true
+            }
+          }
+        }
+      ],
+      "syncRgbCount": 1
+    },
+    "rgb_ack_throttle_emit_on_parse_numbers": [
+      6,
+      12
+    ]
+  },
+  "receive_gate": {
+    "not_16_20_report": {
+      "es_events": 0,
+      "parsed": 0
+    },
+    "report_16_20": {
+      "es_events_after_first": 1,
+      "parsed": 1
+    }
+  }
+}

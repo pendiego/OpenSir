@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security or controller-safety report
+    url: https://github.com/pendiego/OpenSir/security/advisories/new
+    about: Report anything that could write bad data to a controller privately.

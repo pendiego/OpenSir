@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- OpenSir app icon: the brand mark (stick bezel + lit cap, src/lib/components/BrandMark.svelte) on a graphite tile.
+       Regenerate the platform icons with: render this to app-icon.png (1024², transparent), then `npx tauri icon src-tauri/app-icon.png`. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2b2e" />
+      <stop offset="1" stop-color="#131314" />
+    </linearGradient>
+    <radialGradient id="bench" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f2a93b" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#f2a93b" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glow" x="-1" y="-1" width="3" height="3">
+      <feGaussianBlur stdDeviation="22" />
+    </filter>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="url(#tile)" />
+  <rect x="65.5" y="65.5" width="893" height="893" rx="206.5" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3" />
+  <circle cx="512" cy="512" r="300" fill="url(#bench)" />
+  <!-- Mark geometry from the 48-unit drawing, scaled ×14.2: ring r18 / stroke 4.5, cap r6. -->
+  <circle cx="512" cy="512" r="256" fill="none" stroke="#ededed" stroke-width="64" />
+  <circle cx="512" cy="512" r="85" fill="#f2a93b" filter="url(#glow)" opacity="0.8" />
+  <circle cx="512" cy="512" r="85" fill="#f2a93b" />
+</svg>

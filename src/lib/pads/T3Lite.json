@@ -1,0 +1,198 @@
+{
+  "height": 606.44,
+  "spots": {
+    "L2": {
+      "x": 198,
+      "y": -32,
+      "shape": {
+        "kind": "rect",
+        "w": 120,
+        "h": 30,
+        "rx": 15
+      },
+      "chip": true
+    },
+    "R2": {
+      "x": 804,
+      "y": -32,
+      "shape": {
+        "kind": "rect",
+        "w": 120,
+        "h": 30,
+        "rx": 15
+      },
+      "chip": true
+    },
+    "L1": {
+      "x": 198,
+      "y": 22,
+      "shape": {
+        "kind": "rect",
+        "w": 128,
+        "h": 30,
+        "rx": 12,
+        "rot": -10
+      }
+    },
+    "R1": {
+      "x": 804,
+      "y": 22,
+      "shape": {
+        "kind": "rect",
+        "w": 128,
+        "h": 30,
+        "rx": 12,
+        "rot": 10
+      }
+    },
+    "L3": {
+      "x": 348,
+      "y": 287,
+      "shape": {
+        "kind": "circle",
+        "r": 56
+      }
+    },
+    "R3": {
+      "x": 654,
+      "y": 287,
+      "shape": {
+        "kind": "circle",
+        "r": 56
+      }
+    },
+    "Up": {
+      "x": 202,
+      "y": 111,
+      "shape": {
+        "kind": "rect",
+        "w": 50,
+        "h": 56,
+        "rx": 6
+      }
+    },
+    "Under": {
+      "x": 202,
+      "y": 213,
+      "shape": {
+        "kind": "rect",
+        "w": 50,
+        "h": 52,
+        "rx": 6
+      }
+    },
+    "Left": {
+      "x": 151,
+      "y": 161,
+      "shape": {
+        "kind": "rect",
+        "w": 50,
+        "h": 50,
+        "rx": 6
+      }
+    },
+    "Right": {
+      "x": 253,
+      "y": 161,
+      "shape": {
+        "kind": "rect",
+        "w": 52,
+        "h": 50,
+        "rx": 6
+      }
+    },
+    "TRI": {
+      "x": 800,
+      "y": 90,
+      "shape": {
+        "kind": "circle",
+        "r": 33
+      }
+    },
+    "SQU": {
+      "x": 730,
+      "y": 161,
+      "shape": {
+        "kind": "circle",
+        "r": 33
+      }
+    },
+    "CIR": {
+      "x": 870,
+      "y": 161,
+      "shape": {
+        "kind": "circle",
+        "r": 33
+      }
+    },
+    "CRO": {
+      "x": 800,
+      "y": 231,
+      "shape": {
+        "kind": "circle",
+        "r": 33
+      }
+    },
+    "PS": {
+      "x": 543,
+      "y": 161,
+      "shape": {
+        "kind": "rect",
+        "w": 68,
+        "h": 26,
+        "rx": 13
+      }
+    },
+    "Camera": {
+      "x": 460,
+      "y": 161,
+      "shape": {
+        "kind": "rect",
+        "w": 68,
+        "h": 26,
+        "rx": 13
+      }
+    },
+    "Sel": {
+      "x": 346,
+      "y": 71,
+      "shape": {
+        "kind": "circle",
+        "r": 13
+      }
+    },
+    "Sta": {
+      "x": 657,
+      "y": 71,
+      "shape": {
+        "kind": "circle",
+        "r": 13
+      }
+    },
+    "FL1": {
+      "x": 400,
+      "y": 661,
+      "shape": {
+        "kind": "rect",
+        "w": 96,
+        "h": 32,
+        "rx": 16
+      },
+      "chip": true
+    },
+    "FR1": {
+      "x": 600,
+      "y": 661,
+      "shape": {
+        "kind": "rect",
+        "w": 96,
+        "h": 32,
+        "rx": 16
+      },
+      "chip": true
+    }
+  },
+  "extra": [],
+  "touchKeys": [],
+  "leds": []
+}

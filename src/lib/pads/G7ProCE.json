@@ -1,0 +1,31 @@
+{
+  "height": 678.54,
+  "spots": {
+    "L2": { "x": 344, "y": -32, "shape": { "kind": "rect", "w": 120, "h": 30, "rx": 15 }, "chip": true },
+    "L1": { "x": 344, "y": 15, "shape": { "kind": "rect", "w": 70, "h": 22, "rx": 11, "rot": -8 } },
+    "L3": { "x": 245, "y": 200, "shape": { "kind": "circle", "r": 72 } },
+    "Up": { "x": 366, "y": 320, "shape": { "kind": "rect", "w": 60, "h": 80, "rx": 10 } },
+    "Under": { "x": 366, "y": 400, "shape": { "kind": "rect", "w": 60, "h": 80, "rx": 10 } },
+    "Left": { "x": 320, "y": 360, "shape": { "kind": "rect", "w": 80, "h": 60, "rx": 10 } },
+    "Right": { "x": 412, "y": 360, "shape": { "kind": "rect", "w": 80, "h": 60, "rx": 10 } },
+    "TRI": { "x": 756, "y": 132, "shape": { "kind": "circle", "r": 37 } },
+    "SQU": { "x": 688, "y": 199, "shape": { "kind": "circle", "r": 37 } },
+    "CIR": { "x": 823, "y": 199, "shape": { "kind": "circle", "r": 37 } },
+    "CRO": { "x": 756, "y": 266, "shape": { "kind": "circle", "r": 37 } },
+    "R1": { "x": 656, "y": 15, "shape": { "kind": "rect", "w": 70, "h": 22, "rx": 11, "rot": 8 } },
+    "R2": { "x": 656, "y": -32, "shape": { "kind": "rect", "w": 120, "h": 30, "rx": 15 }, "chip": true },
+    "R3": { "x": 630, "y": 354, "shape": { "kind": "circle", "r": 71 } },
+    "PS": { "x": 500, "y": 140, "shape": { "kind": "circle", "r": 40 } },
+    "Sel": { "x": 380, "y": 112, "shape": { "kind": "circle", "r": 21 } },
+    "Sta": { "x": 619, "y": 112, "shape": { "kind": "circle", "r": 21 } },
+    "Camera": { "x": 500, "y": 225, "shape": { "kind": "rect", "w": 56, "h": 30, "rx": 15 } },
+    "FL1": { "x": 400, "y": 734, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    "FR1": { "x": 600, "y": 734, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true }
+  },
+  "extra": [
+    { "x": 280, "y": 734, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true },
+    { "x": 720, "y": 734, "shape": { "kind": "rect", "w": 96, "h": 32, "rx": 16 }, "chip": true }
+  ],
+  "touchKeys": [],
+  "leds": []
+}
