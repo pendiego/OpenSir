@@ -1,8 +1,62 @@
+<div align="center">
+
+<img src="src-tauri/icons/128x128@2x.png" width="96" alt="OpenSir logo">
+
 # OpenSir
 
-Open-source configurator for **GameSir controllers**. The Cyclone 2 is fully supported and verified on hardware. The Tarantula CE, G7 Pro 8K and K2 8K are detected and read-only for now. It replaces the official GameSir Connect app for: button remapping, turbo, macros on the back keys, stick and trigger deadzones and curves, hair triggers, gyro (motion) output, rumble levels, RGB lighting and a live button test.
+**Open-source configurator for GameSir controllers.**
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-f0a030)](LICENSE) ![Platform: Windows](https://img.shields.io/badge/platform-Windows-0078d4) ![Tauri 2](https://img.shields.io/badge/Tauri-2-24c8db) ![Rust](https://img.shields.io/badge/Rust-stable-b7410e) ![Svelte 5](https://img.shields.io/badge/Svelte-5-ff3e00)
+
+<img src="docs/screenshots/overview.png" width="860" alt="OpenSir overview of a Cyclone 2 profile">
+
+</div>
+
+OpenSir replaces the official GameSir Connect app. The Cyclone 2 is fully supported and verified on hardware. The Tarantula CE, G7 Pro 8K and K2 8K are detected and read-only for now.
 
 OpenSir is a clean-room reimplementation of the protocol. The protocol was documented from observed vendor-app behaviour and captures on real hardware (see `docs/`), then the code was written from those documents. Controller cover images are described in the [Artwork notice](#artwork-notice).
+
+## Features
+
+- **Buttons:** remap any button, turbo, macros on the back keys.
+- **Sticks and triggers:** deadzones, anti-deadzones and response curves (linear, concave/convex, S-curve, custom points), hair triggers.
+- **Motion:** gyro output to a stick, the mouse pointer or the scroll wheel.
+- **Vibration:** per-motor rumble levels, including the trigger motors.
+- **Lights:** RGB presets, per-frame colours, brightness and speed.
+- **Button test:** live view of sticks, triggers and pressed buttons.
+- **Four profiles** plus the shift layer, light and dark themes, English and Portuguese.
+
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/controllers.png" alt="Controller list"><br><sub><b>Controllers:</b> plug in or pair a controller and it shows up.</sub></td>
+    <td width="50%"><img src="docs/screenshots/buttons.png" alt="Button remapping"><br><sub><b>Buttons:</b> pick a button on the drawing, choose what it sends.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/sticks.png" alt="Stick deadzone and curve"><br><sub><b>Sticks:</b> deadzone, anti-deadzone and a custom curve.</sub></td>
+    <td><img src="docs/screenshots/triggers.png" alt="Trigger settings"><br><sub><b>Triggers:</b> ranges, curve and hair-trigger modes.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/motion.png" alt="Motion settings"><br><sub><b>Motion:</b> gyro activation, orientation and output.</sub></td>
+    <td><img src="docs/screenshots/lights.png" alt="Light presets and frames"><br><sub><b>Lights:</b> presets, frames, brightness and speed.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/button-test.png" alt="Live button test"><br><sub><b>Button test:</b> live sticks, triggers and buttons.</sub></td>
+    <td><img src="docs/screenshots/overview-light.png" alt="Overview in the light theme"><br><sub><b>Light theme</b></sub></td>
+  </tr>
+</table>
+
+<details>
+<summary>More screens</summary>
+
+| Vibration | Profile settings |
+|---|---|
+| <img src="docs/screenshots/vibration.png" alt="Vibration levels"> | <img src="docs/screenshots/profile-settings.png" alt="Profile settings"> |
+
+</details>
+
+Screenshots were taken from the browser preview (`npm run dev`) with a simulated Cyclone 2.
 
 ## Status
 
